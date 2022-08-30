@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {environment} from "../environments/environment";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'guruLogger';
+
+  constructor() {
+  }
+  ngOnInit() {
+    // Setup logger
+    if (environment.production) {
+
+    }
+
+
+  }
+
+  ngOnDestroy() {
+
+  }
 }
