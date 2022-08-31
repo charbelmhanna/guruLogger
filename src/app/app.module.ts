@@ -17,6 +17,7 @@ import {AngularFireAuthModule} from "@angular/fire/compat/auth";
 import {AngularFireStorageModule} from "@angular/fire/compat/storage";
 import {AngularFireModule} from "@angular/fire/compat";
 import {Observable} from "rxjs";
+import {MatProgressBarModule} from "@angular/material/progress-bar";
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,8 @@ import {Observable} from "rxjs";
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     AngularFireAuthModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    MatProgressBarModule
 
   ],
   providers: [],
